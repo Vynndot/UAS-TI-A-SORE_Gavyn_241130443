@@ -12,7 +12,87 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tokopaedi</h1>
+      </header>
+
+      <main>
+        <div class="list-produk">
+          <div class="item-produk">
+            <img src="./images/produk1.jpg" alt="foto1">
+            <div class="detail-produk">
+              <h3>Denmark backpack</h3>
+              <p>One size</p>
+              <p>Cream</p>
+            </div>
+            <div class="pilih-quantity">
+              <button class="quantity-btn minus-btn">-</button>
+              <span class="quantity">0</span>
+              <button class="quantity-btn plus-button">+</button>
+            </div>
+            <div class="harga" data-price="20">$<span>20</span></div>
+
+            <div class="item-produk">
+              <img src=".//images/produk2.jpeg" alt="foto2">
+              <div class="detail-produk">
+                <h3>Casual backpack</h3>
+                <p>One size</p>
+                <p>Black</p>
+              </div>
+              <div class="pilih-quantity">
+                <button class="quantity-btn minus-btn">-</button>
+                <span class="quantity">0</span>
+                <button class="quantity-btn plus-button">+</button>
+              </div>
+              <div class="harga" data-price="85">$<span>85</span></div>
+
+              <div class="item-produk">
+                <img src="./images/produk3.png" alt="foto3">
+                <div class="detail-produk">
+                  <h3>Men backpack</h3>
+                  <p>One size</p>
+                  <p>Grey</p>
+                </div>
+                <div class="pilih-quantity">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity">0</span>
+                  <button class="quantity-btn plus-button">+</button>
+                </div>
+                <div class="harga" data-price="150">$<span>150</span></div>
+
+                <div class="item-produk">
+                  <img src="./images/produk4.jpg" alt="foto4">
+                  <div class="detail-produk">
+                    <h3>Women backpack</h3>
+                    <p>One size</p>
+                    <p>Pink</p>
+                  </div>
+                  <div class="pilih-quantity">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity">0</span>
+                    <button class="quantity-btn plus-button">+</button>
+                  </div>
+                  <div class="harga" data-price="60">$<span>60</span></div>  
+          </div>
+        </div>
+
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <form id="order-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="promo-code" placeholder="Promo Code" required>
+
+            <button type="reset" id="reset-btn" class="btn reset-btn">Reset</button>
+            <button type="submit" id="apply-btn" class="btn apply-btn">Apply</button>
+          </form>
+          <div id="result-display" class="result-display"></div>
+        </div>
+      </main>
+    </div>
+  </body>
   <script src="./script/jquery-3.7.1.min.js"></script>
   <script src="./script/script.js"></script>
 </html>
